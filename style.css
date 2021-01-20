@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background: #090909;
+	color: #513E29;
+}
+
+header {
+	padding: 20px;
+	border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+header div {
+	text-align: center;
+}
+
+header div button {
+	/*background-color: #4CAF50;*/
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#botao-inicio {
+	background-color: #f44336;
+}
+
+#botao-mensagem {
+	background-color: #4CAF50;
+}
+
+#botao-credito {
+	background-color: #008CBA;
+}
+
+header div button:hover {
+	color: blue;
+    transition: color 200ms;
+}
+
+#inicio {
+	padding: 30px;
+	border: 1px solid white;
+}
+
+.cards {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+
+.card_inicio {
+	background-color: #AE9F7D;
+	padding: 40px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.card_inicio h1 {
+	text-align: center;
+	color: #513E29;
+	font-size: 60px;
+}
+
+.card_inicio p {
+	text-align: center;
+	color: #513E29;
+	font-size: 60px;
+}
+.card_menu {
+	background: url('comida-2.jpg') no-repeat;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.card_menu h1, h2 {
+	text-align: right;
+	color: white;
+}
+
+.image_inicio img {
+	width: 100%;
+}
+
+.image_menu img {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize-modal {
+    color: black;
+    position: absolute;
+    right: 32px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.maximized {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.modal-content iframe {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 5%;
+}
